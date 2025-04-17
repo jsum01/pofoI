@@ -1,0 +1,43 @@
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.body.activeSide {
+    width: var(--display-width);
+}
+
+/* -----------------------Left----------------------- */
+.motionIcon {}
+
+.left {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 1.2em;
+    color: var(--modern-text);
+}
+
+.left li:hover {
+    cursor: pointer;
+    transition: font-size 0.2s ease;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* -----------------------Center----------------------- */
+.center {
+    display: flex;
+    gap: 0.3em;
+    align-items: center;
+}
+
+/* -----------------------Right----------------------- */
+.right img:hover {
+    cursor: pointer;
+    width: 22;
+}

@@ -1,0 +1,236 @@
+:root {
+    --sidebar-width: 20vw;
+    --display-width: 80vw;
+    --modern-text: lightgray;
+    --tipical-text-blue: rgb(142, 225, 250);
+    --tipical-text-blue-emphasis: rgb(112, 174, 201);
+    --tipical-text-yellow: rgb(206, 198, 170);
+    --tipical-text-yellow-emphasis: rgb(199, 182, 113);
+    --main-font-family: "Gill Sans", sans-serif;
+}
+
+.pofo {
+    color: var(--tipical-text-yellow);
+    font-family: var(--main-font-family);
+    font-size: 1.6em;
+}
+
+.I {
+    color: var(--tipical-text-yellow-emphasis);
+    font-family: par(--main-font-family);
+    font-size: 2.4em;
+    transform: rotate(10deg);
+    animation: rotateText 2s infinite alternate;
+}
+
+@keyframes rotateText {
+
+    0%,
+    100% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(-30deg);
+    }
+}
+
+/* 폰트 사이즈가 1.6 ~ 2.4까지 커졌다줄어졌다 반복합니다. */
+.Login {
+    color: var(--tipical-text-yellow);
+    font-family: var(--main-font-family);
+    font-size: 1.6em;
+    font-weight: bold;
+    animation: zoomNzoomOut 2s infinite alternate;
+    cursor: pointer;
+}
+
+@keyframes zoomNzoomOut {
+
+    0%,
+    100% {
+        font-size: 1.6em;
+        transform: rotate(20deg);
+    }
+
+    50% {
+        font-size: 2.4em;
+        transform: rotate(-30deg);
+    }
+}
+
+/* ---------------------------- Initialize ---------------------------- */
+/* reset.css */
+* {
+    font-family: var(--main-font-family);
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.list_h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.list_h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.list_h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* -------Modal------- */
+.modal_overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(107, 107, 107);
+    opacity: 0.5;
+    z-index: 999;
+}
+
+.modal_conatiner {
+    min-width: 600px;
+    max-width: 80vw;
+    min-height: 600px;
+    max-width: 80vh;
+    background-color: rgb(255, 252, 246);
+    border-radius: 2vh;
+    box-shadow: 5px 5px 5px rgb(255, 252, 246);
+}
